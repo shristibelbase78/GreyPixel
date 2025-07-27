@@ -1,0 +1,215 @@
+.compact-contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  padding: 1rem;
+  background: #f8fafc;
+  font-family: 'Inter', sans-serif;
+}
+
+.compact-contact-card {
+  width: 100%;
+  max-width: 900px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.compact-title {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin: 0.8rem 0;
+  font-weight: 600;
+}
+
+.compact-columns {
+  display: flex;
+}
+
+.compact-form-section,
+.compact-info-section {
+  flex: 1;
+  padding: 1.2rem;
+}
+
+.compact-form-section {
+  border-right: 1px solid #e2e8f0;
+}
+
+.form-header {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin-bottom: 0.8rem;
+}
+
+.header-icon {
+  font-size: 1.2rem;
+  color: #3b82f6;
+}
+
+.compact-form-section h2 {
+  font-size: 1.1rem;
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.ultra-compact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.compact-input-row {
+  display: flex;
+  gap: 0.8rem;
+}
+
+.compact-input-group {
+  flex: 1;
+  margin-bottom: 0.2rem;
+}
+
+.compact-input-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
+  color: #475569;
+  font-weight: 500;
+}
+
+input, textarea, select {
+  width: 100%;
+  padding: 0.6rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 5px;
+  font-size: 0.85rem;
+}
+
+.compact-phone-input {
+  display: flex;
+}
+
+.compact-phone-input select {
+  flex: 0 0 70px;
+  border-right: none;
+  border-radius: 5px 0 0 5px;
+  background: #f8fafc;
+}
+
+.compact-phone-input input {
+  border-radius: 0 5px 5px 0;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.compact-submit-btn {
+  background: #3b82f6;
+  color: white;
+  border: none;
+  padding: 0.7rem;
+  border-radius: 5px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.4rem;
+  cursor: pointer;
+  margin-top: 0.3rem;
+}
+
+.btn-icon {
+  font-size: 0.8rem;
+}
+
+.compact-info-section {
+  background: #f8fafc;
+}
+
+.compact-info-title {
+  font-size: 1.1rem;
+  color: #1e293b;
+  font-weight: 600;
+  margin-bottom: 0.8rem;
+}
+
+.compact-contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.compact-method {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.method-icon {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  color: white;
+}
+
+.phone {
+  background: #3b82f6;
+}
+
+.whatsapp {
+  background: #25D366;
+}
+
+.email {
+  background: #6366f1;
+}
+
+.compact-method h3 {
+  font-size: 0.9rem;
+  color: #1e293b;
+  margin-bottom: 0.1rem;
+  font-weight: 600;
+}
+
+.compact-method p {
+  font-size: 0.8rem;
+  color: #475569;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .compact-contact-container {
+    min-height: auto;
+    padding: 0.8rem;
+  }
+  
+  .compact-columns {
+    flex-direction: column;
+  }
+  
+  .compact-form-section {
+    border-right: none;
+    border-bottom: 1px solid #e2e8f0;
+  }
+  
+  .compact-input-row {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .compact-form-section,
+  .compact-info-section {
+    padding: 1rem;
+  }
+}
