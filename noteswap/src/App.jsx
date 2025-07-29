@@ -5,7 +5,7 @@ import Login from './pages/Login/Login';
 import Signup from './pages/Signup/signup';
 import AboutUs from './pages/About/About';
 import Contact from './pages/Contact/contact';
-import BrowseNotes from './pages/browse';
+import Upload from './pages/Upload/Upload';
 import './App.css';
 
 function App() {
@@ -43,7 +43,7 @@ function App() {
             <Route path="/signup" element={<Signup />} />
             <Route path="/about" element={<AboutUs />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/browse" element={<BrowseNotes/>} />
+            <Route path="/upload" element={<Upload />} />
           </Routes>
         </main>
 
